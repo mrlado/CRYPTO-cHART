@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body>
+    <header>
+        <lable for="symbol">Пара</lable>
+        <select id="symbol">
+            <option>BTCUSDT</option>
+            <option>ETHUSDT</option>
+            <option>LTCUSDT</option>
+        </select>
+
+        <lable for="interval">Интервал</lable>
+        <select id="interval">
+            <option>1m</option>
+            <option>5m</option>
+            <option>1h</option>
+            <option>4h</option>
+            <option>1d</option>
+        </select>
+    </header>
+    <body>
+        <div class="Wrapper">
+            <div id="chart">Visual</div>
+            <div class="Trades-container">
+                <div class="Trades-container_header">
+                    <span>Price</span>
+                    <span>Quantity</span>
+                    <span>Price</span>
+                </div>
+                <div class="Trades-container_List">
+                    <div class="Trade Buy">
+                        <span>10000.00</span>
+                        <span>2</span>
+                        <span>20000.00</span>
+                    </div>
+                    <div class="Trade Sell">
+                        <span>10000.00</span>
+                        <span>2</span>
+                        <span>20000.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
